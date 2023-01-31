@@ -33,11 +33,7 @@ colors = getjson(
 
 # all the repos list which i want to show on website
 repos_list = [
-    "vedic-lang/vedic", "vedicscriptures/bhagavad-gita-api",
-    "PtPrashantTripathi/IPL-2020-Prediction", "PtPrashantTripathi/linkpe",
-    "PtPrashantTripathi/movieinfo", "PtPrashantTripathi/Shree-Ganesh",
-    "PtPrashantTripathi/Cloud-Storage-System", "PtPrashantTripathi/Adhyatma",
-    "PtPrashantTripathi/php-social-networking-site"
+    "18GRUOHiMhq51oRx4XUVe8fgcn1brYX6Y/edit?usp=share_link&ouid=102269643375653787985&rtpof=true&sd=true"
 ]
 
 # execuation timer
@@ -48,20 +44,9 @@ repos_data = []
 
 # main fuction
 for repo in repos_list:
-    rdata = getjson(f'https://api.github.com/repos/{repo}')
-    banner = getBanner(f'https://github.com/{repo}')
+    rdata = getjson(f'https://docs.google.com/document/d/{repo}')
     data = {
-        "name": rdata["name"],
-        "url": rdata["html_url"],
-        "description": rdata["description"],
-        "banner": banner,
-        "color":
-        colors[rdata["language"]]["color"] if rdata["language"] else '',
-        "lang": rdata["language"],
-        "date": rdata["created_at"],
-        "stars": rdata["stargazers_count"],
-        "forks": rdata["forks"],
-        "generatedOn": now
+        "name": "google",
     }
     repos_data.append(data)
     print(f"{repo} done\t--- {time.time() - start_time} seconds ---")
