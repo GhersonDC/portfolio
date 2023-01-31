@@ -15,7 +15,7 @@ fetch('json/repos.json')
         repo.description
       }</p><a href="${
         repo.url
-      }"class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect bg-gray mdl-shadow--8dp"data-upgraded="MaterialButton,MaterialRipple"><i class="zmdi zmdi-github-alt"></i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a></div><div class="mdl-card__actions mdl-card--border"><span class="blog-post-date inline-block">${
+      }"class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect bg-gray mdl-shadow--8dp"data-upgraded="MaterialButton,MaterialRipple"><i class="zmdi zmdi-cloud-download"></i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a></div><div class="mdl-card__actions mdl-card--border"><span class="blog-post-date inline-block">${
         repo.date.split('T')[0]
       }</span></div></div></div></div><!--repo card ended-->`;
     });
