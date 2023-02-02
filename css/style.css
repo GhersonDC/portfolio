@@ -488,7 +488,7 @@ p.lead {
   margin-top: 175px !important;
 }
 .mt-180 {
-  margin-top: 180px !important;
+  margin-top: 1rem !important;
 }
 .mt-185 {
   margin-top: 185px !important;
@@ -1176,7 +1176,7 @@ blockquote:after {
   background: #272727;
 }
 .mdl-layout__drawer .mdl-navigation li.active .mdl-navigation__link {
-  color: #fff;
+  color: black;
 }
 .mdl-layout__drawer .mdl-navigation li.active .mdl-navigation__link:hover {
   color: #969696;
@@ -1323,15 +1323,14 @@ blockquote:after {
     bottom: 0;
     z-index: 99;
     flex-direction: column;
-    background: #2879ff;
-    color: white;
+    background: black;
+    opacity: .90;
     list-style: none;
     padding-top: auto;
     text-align: center;
   }
   .menu > li{
     padding-top: 1rem;
-    border: 1px solid black;
   }
   .showMenu {
     transform: translateY(0);
@@ -2295,7 +2294,7 @@ blockquote:after {
 }
 @media (max-width: 768px) {
   .mt-sm-120 {
-    margin-top: 120px !important;
+    margin-top: 1rem !important;
   }
   .about-sec .candidate-img {
     height: 180px;
