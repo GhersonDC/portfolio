@@ -59,6 +59,16 @@
             <div class="mdl-layout-spacer"></div>
             <ul class="menu">
               <li>
+                <a class="mdl-navigation__link" data-scroll href="#about_sec"
+                  onclick="go();">About</a
+                >
+              </li>
+              <li>
+                <a class="mdl-navigation__link" data-scroll href="#contact_sec"
+                  onclick="go();">Contact</a
+                >
+              </li>
+              <li>
                 <a
                   class="mdl-navigation__link"
                   data-scroll
@@ -67,18 +77,13 @@
                 >
               </li>
               <li>
-                <a class="mdl-navigation__link" data-scroll href="#interest_sec"
-                onclick="go();">Interest</a
-                >
-              </li>
-              <li>
                 <a class="mdl-navigation__link" data-scroll href="#project_sec"
                 onclick="go();">Projects</a
                 >
               </li>
               <li>
-                <a class="mdl-navigation__link" data-scroll href="#contact_sec"
-                  onclick="go();">Contact</a
+                <a class="mdl-navigation__link" data-scroll href="#interest_sec"
+                onclick="go();">Interest</a
                 >
               </li>
             </ul>
@@ -175,7 +180,8 @@
         </div>
         <div class="main-content relative">
           <div class="container">
-            <section class="about-sec mt-180 mt-sm-120 mb-30">
+            <!-- About me -->
+            <section id="about_sec" class="about-sec mt-180 mt-sm-120 mb-30">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="mdl-card mdl-shadow--2dp">
@@ -221,38 +227,38 @@
                           <div class="mt-30">
                             <a
                               id="download_cv"
-                              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-green font-white mr-10"
+                              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-gray font-white mr-10"
                               href="https://docs.google.com/document/d/18GRUOHiMhq51oRx4XUVe8fgcn1brYX6Y/edit?usp=sharing&ouid=102269643375653787985&rtpof=true&sd=true"
-                              >download Resume</a
+                              target="_blank" rel="noopener noreferrer">download Resume</a
                             >
                             <a
-                              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-blue font-white"
+                              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-gray font-white"
                               href="#contact_sec"
                               data-scroll
-                              >contact</a
+                              target="_blank" rel="noopener noreferrer">contact</a
                             >
                           </div>
                         </div>
                         <ul class="profile-wrap mt-50">
                           <li>
                             <div class="profile-title">
-                              &#127891; Experience Level :
+                              Experience Level :
                             </div>
                             2+ years
                           </li>
                           <li>
                             <div class="profile-title">
-                              &#129513; Interested in :
+                              Interested in :
                             </div>
                             Technology, Cloud Computing, Outdoors Activities
                           </li>
                           <li>
-                            <div class="profile-title">💡 Skills :</div>
+                            <div class="profile-title"> Skills :</div>
                             Python, C#, Javascript, Node js, PHP Laravel, AWS
                             Cloud, Linux CLI, MySql and NoSql DBs
                           </li>
                           <li>
-                            <div class="profile-title">&#x26a1; Extras :</div>
+                            <div class="profile-title"> Extras :</div>
                             English B2 Certified, German Learner, Interest for
                             dockers
                           </li>
@@ -365,12 +371,42 @@
                 <div id="form_card_height" class="col-sm-12 mb-30">
                   <div class="mdl-card mdl-shadow--2dp text-center">
                     <h4 class="mb-10 font-unsetcase">Reach me at:</h4>
+                    <!-- phones and address -->
                     <ul class="social-icons mt-10">
+                      <li>Phone: +52 (664) 771 - 1282</li>
+                      
+                    </ul>
+                    <!-- socials li -->
+                    <ul class="social-icons mt-10">
+                      <li>
+                        <a
+                          class="email-link"
+                          href = "mailto: gherson.cruz@iteso.mx"
+                        >
+                          <i
+                            id="tt8"
+                            class="zmdi zmdi-email"
+                            tabindex="0"
+                          ></i>
+                          <div
+                            class="mdl-tooltip"
+                            data-mdl-for="tt8"
+                            data-upgraded="MaterialTooltip"
+                            style="
+                              left: 332px;
+                              margin-left: -30.5px;
+                              top: 568px;
+                            "
+                          >
+                            Email
+                          </div>
+                        </a>
+                      </li>
                       <!-- linkedin -->
                       <li>
                         <a
                           class="linkedin-link"
-                          href="https://www.linkedin.com/in/"
+                          href="https://www.linkedin.com/in/GhersonDC"
                         >
                           <i
                             id="tt8"
@@ -395,7 +431,7 @@
                       <li>
                         <a
                           class="instagram-link"
-                          href="https://www.instagram.com"
+                          href="https://www.instagram.com/GhersonDC"
                         >
                           <i
                             id="tt10"
@@ -418,7 +454,7 @@
                       </li>
                       <!-- github -->
                       <li>
-                        <a class="github-link" href="https://www.github.com/">
+                        <a class="github-link" href="https://www.github.com/GhersonDC">
                           <i id="tt9" class="zmdi zmdi-github" tabindex="0"></i>
                           <div
                             class="mdl-tooltip"
@@ -443,7 +479,7 @@
               class="footer-sec sec-pad-top-sm sec-pad-bottom text-center"
             >
               <p class="mt-10">
-                Pt. Prashant Tripathi © 2022 All rights reserved.
+                Modified by Gherson David C. E. Template from Pt. Prashant Tripathi <br>© 2022-2023 All rights reserved.
               </p>
             </footer>
           </div>

@@ -11,11 +11,11 @@ fetch('json/repos.json')
         repo.color
       };"></span><span>${repo.lang}</span></span><a href="${
         repo.url
-      }"><h4 class="mt-15 mb-20">${repo.name}</h4></a><p>${
+      }" target="_blank" rel="noopener noreferrer"><h4 class="mt-15 mb-20">${repo.name}</h4></a><p>${
         repo.description
       }</p><a href="${
         repo.url
-      }"class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect bg-gray mdl-shadow--8dp"data-upgraded="MaterialButton,MaterialRipple"><i class="zmdi zmdi-cloud-download"></i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a></div><div class="mdl-card__actions mdl-card--border">
+      }" target="_blank" rel="noopener noreferrer" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect bg-blue mdl-shadow--8dp"data-upgraded="MaterialButton,MaterialRipple"><i class="zmdi zmdi-cloud-download"></i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a></div><div class="mdl-card__actions mdl-card--border">
       </span></div></div></div></div><!--repo card ended-->`;
     });
     document.getElementById('repo-card').innerHTML = output;
